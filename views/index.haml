@@ -1,0 +1,11 @@
+%h2="上传xml,转换成excel"
+%form{:action => "/convert_xml.xls", :method => "post" ,:enctype=>"multipart/form-data"}
+  %input{:type=>"file",:name=>"file"}
+  %input{:type=>"submit",:value=>"Upload"}
+
+%h2="上传excel,转换成xml"
+%form{:action => "/convert_excel.xml", :method => "post" ,:enctype=>"multipart/form-data"}
+  %input{:type=>"file",:name=>"file"}
+  %input{:type=>"submit",:value=>"Upload"}
+
+%a{:href => "/template.xls"} excel模板
